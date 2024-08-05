@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="hint_search">Search</string>
+    <string name="label_total_item">Total Item :</string>
+    <string name="label_start_with_latter">Total Item that Start with </string>
+</resources>

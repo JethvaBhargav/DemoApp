@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_dp20">
+
+    <TextView
+        android:id="@+id/text_total_item_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:paddingBottom="@dimen/_dp8"
+        android:textSize="@dimen/_sp16" />
+
+    <TextView
+        android:id="@+id/text_latter_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:textSize="@dimen/_sp16" />
+</LinearLayout>
