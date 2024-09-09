@@ -19,7 +19,4 @@ class CategoryItemEntityMapper : EntityMapper<CategoryItemList, CategoryItemEnti
         items = entity.items as List<com.example.domain.model.Item>
     )
 
-    override fun mapToEntity(model: CategoryItemList): CategoryItemEntity {
-        TODO("Not yet implemented")
-    }
 }
