@@ -1,62 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_dp1"
-        android:background="@drawable/item_raw_backgorund"
-        android:padding="@dimen/_dp10">
+        android:orientation="vertical">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardview_round_corner"
+        <TextView
+            android:id="@+id/text_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_dp10"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_sp20"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_category_row_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="@dimen/_dp12"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_marginTop="@dimen/_dp10"
+            android:nestedScrollingEnabled="false"
 
-            <ImageView
-                android:id="@+id/img_item"
-                android:layout_width="@dimen/_dp50"
-                android:layout_height="@dimen/_dp50"
-                android:scaleType="fitXY"
-                tools:ignore="ContentDescription" />
-        </androidx.cardview.widget.CardView>
+            />
 
-        <LinearLayout
-            android:layout_width="@dimen/_dp0"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_dp12"
-            android:layout_marginEnd="@dimen/_dp12"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/cardview_round_corner"
-            app:layout_constraintTop_toTopOf="@id/cardview_round_corner"
-            tools:ignore="NotSibling">
+    </LinearLayout>
 
-            <TextView
-                android:id="@+id/text_item_title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_dp6"
-                android:maxLines="2"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_sp12"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/text_item_sub_title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_dp1"
-                android:maxLines="2"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_sp10" />
-        </LinearLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -3,7 +3,4 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#0000FF</color>
-    <color name="item_bg_color">#CDE8E1</color>
-    <color name="search_bg_color">#E5EBEA</color>
-    <color name="feb_button_color">#2C98F0</color>
 </resources>

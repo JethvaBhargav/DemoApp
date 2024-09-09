@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <LinearLayout
+            android:id="@+id/rlMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="@dimen/_dp8"
+            tools:ignore="UseCompoundDrawables">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/split_banner_img"
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:scaleType="fitXY"
+                tools:ignore="MissingConstraints" />
+
+           <TextView
+                android:id="@+id/split_banner_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_dp4"
+                android:padding="@dimen/_dp4"
+                android:maxLines="1"
+                android:layout_gravity="center"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+</layout>
